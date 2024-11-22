@@ -1,0 +1,1 @@
+Nesta aula aprendemos animações no css, e fizemos uma página html mostrando essas animações.

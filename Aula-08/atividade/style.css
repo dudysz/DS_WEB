@@ -1,0 +1,42 @@
+.titulo{
+    background-color:plum;
+    display: flex;
+    margin-left: 0%;
+    margin: auto;
+    padding: 20px;
+    padding-left: 100px;
+}
+.opções{
+    margin: auto;
+    background-color: paleturquoise;
+    width: 750px;
+    height: 700px;
+    border: 3px solid purple;
+    text-align: center;
+}
+h1{
+    color: rgba(0, 0, 0, 0.578);
+}
+h2{
+    text-align: center;
+    margin:center;
+}
+.amor{
+    display: inline-block;
+    width: 250px;
+    background-color: plum;
+    text-align: center;
+
+}
+a{
+    display: block;
+    text-decoration: dotted;
+}
+body{
+    background-color: lightskyblue;
+    margin: 0px;
+}
+img{
+    height: 90px;
+    width: 100px;
+}

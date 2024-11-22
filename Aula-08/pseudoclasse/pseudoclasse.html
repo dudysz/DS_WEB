@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+</head>
+<body>
+    <style>
+        /*Exemplo de Hover*/
+        .button-hover:hover{
+            background-color: plum;
+            width: 100px;
+            height: 100px;
+        }
+        /*Exemplo de Active*/
+        .button-active:active{
+            transform: scale(0.95);
+        }
+        /*Exemplo de Focus*/
+        .input-focus:focus{
+            color: purple;
+            background-color: lightskyblue;
+        }
+        /*Exemplo de Checked*/
+        .radio-checked:checked{
+            transform:scale(1.5);
+        }
+        /*Exemplo de Pseudoclasse para links*/
+        a:link{
+            color: brown;
+        }
+        a:visited{
+            color: brown;
+        }
+        .div-vazia{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+        div:empty{
+            display: none;
+        }
+    </style>
+    <div>
+        <h3>Exemplo de Houver</h3>
+        <button class="button-hover">Clique aqui!</button>
+    </div>
+    <div>
+        <h3>Exemplo de Active</h3>
+        <button class="button-active">Clique aqui!</button>
+    </div>
+    <div>
+        <h3>Exemplo de Focus</h3>
+        <input type="text" class="input-focus" placeholder="Clique aqui">
+    </div>
+    <div>
+        <h3>Exemplo de Checked</h3>
+        <label>Radio Button</label>
+        <input type="radio">
+        <label>Checkbox</label>
+        <input type="checkbox">
+    </div>
+    <div>
+        <h2>Exemplo de Pseudoclasse</h2>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a href="#">Link 6</a>
+        <a href="#">Link 7</a>
+        <a href="#">Link 8</a>
+        <a href="#">Link 9</a>
+        <a href="#">Link 10</a>
+    </div>
+    <div class="div-vazia"></div>
+</body>
+</html>

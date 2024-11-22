@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos Animados</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg,purple, plum);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100vh;
+    }
+
+    .object {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      transition: all 0.5s ease;
+    }
+
+    .scale {
+      background: lightslategray;
+    }
+    .scale:hover {
+      transform: scale(1.5);
+    }
+
+    .rotate {
+      background: lightgreen;
+    }
+    .rotate:hover {
+      transform: rotate(45deg);
+    }
+
+   
+    .translate {
+      background: lightseagreen;
+    }
+    .translate:hover {
+      transform: translate(50px, 50px);
+    }
+
+  
+    .border-radius {
+      background: lightskyblue;
+    }
+    .border-radius:hover {
+      border-radius: 50%;
+    }
+
+
+    .opacity {
+      background: lightpink;
+    }
+    .opacity:hover {
+      opacity: 0.5;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+    }
+
+    .keyframes {
+      background: rebeccapurple;
+      animation: bounce 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="object scale">Scale</div>
+  <div class="object rotate">Rotate</div>
+  <div class="object translate">Translate</div>
+  <div class="object border-radius">Border-radius</div>
+  <div class="object opacity">Opacity</div>
+  <div class="object keyframes">Keyframes</div>
+</body>
+</html>
