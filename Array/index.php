@@ -1,21 +1,31 @@
 <?php
-    //incluindo cabeçalho
-    include('head.html');
+    //exemplo do uso de is_array
+    include_once('arrays.php');
+    
+    $variaveltexto = 'arthur'.'<br>';
 
-    //incluindo o corpo
-    if($idadeUsuario  >= 16){
-      include('body.html');   
-    }else{
-        include('body copy.html');
+    if(is_array($estado)) {
+        echo 'é uma array';
+    }  else{
+        echo 'Não é uma array';
     }
-    include('body.html');
 
-    //Incluindo o corpo em PHP
-    include('body.php')
+    $removido = array_shift($estado);
+    array_push($estado, 'paraná'); //adiciona no fim
+    foreach($estado as $estadolinha){
+        echo $estadolinha.'<br>';
+    }
+    echo  '<br><br><br>'; 
 
-    //Incluindo o corpo em PHP com o riquered
-        require_once('body.php');
+    $removido = array_pop($estado);
+    echo $removido;
 
-    //incluindo o rodapé
-    include('footer.html');
+    if(in_array('São Paulo', $estado)){
+        echo 'Estado encontrado';
+    }
+
+    if(array_key_exists('SP',$estadoChaves)){
+        echo 'Chave encontrada',
+    }
+
 ?>

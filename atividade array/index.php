@@ -1,92 +1,83 @@
 <?php
-// 1. 
+
 $frutas = ["Maçã", "Banana", "Laranja", "Abacaxi", "Uva"];
-echo "<h3>1. Frutas no array:</h3>";
-echo "<table border='1' style='border-collapse: collapse;'>";
-echo "<tr><th>Frutas</th></tr>";
+echo "Frutas no array:\n";
 foreach ($frutas as $fruta) {
-    echo "<tr><td>$fruta</td></tr>";
+    echo "- $fruta\n";
 }
-echo "</table><br>";
 
-// 2. 
+echo "\n";
+
+
 $frutas[] = "Manga";
-echo "<h3>2. Array atualizado:</h3>";
-echo "<table border='1' style='border-collapse: collapse;'>";
-echo "<tr><th>Frutas</th></tr>";
-foreach ($frutas as $fruta) {
-    echo "<tr><td>$fruta</td></tr>";
-}
-echo "</table><br>";
+echo "Array atualizado:\n";
+print_r($frutas);
 
-// 3. 
+echo "\n";
+
+
 sort($frutas);
-echo "<h3>3. Array ordenado:</h3>";
-echo "<table border='1' style='border-collapse: collapse;'>";
-echo "<tr><th>Frutas</th></tr>";
-foreach ($frutas as $fruta) {
-    echo "<tr><td>$fruta</td></tr>";
-}
-echo "</table><br>";
+echo "Array ordenado em ordem alfabética:\n";
+print_r($frutas);
 
-// 4.
+echo "\n";
+
+
 $produto = [
     "nome" => "Teclado",
     "preco" => 120.50,
     "estoque" => 15
 ];
-echo "<h3>4. Informações do produto:</h3>";
-echo "<table border='1' style='border-collapse: collapse;'>";
-echo "<tr><th>Chave</th><th>Valor</th></tr>";
-foreach ($produto as $chave => $valor) {
-    echo "<tr><td>$chave</td><td>$valor</td></tr>";
-}
-echo "</table><br>";
 
-// 5. 
+echo "Informações do produto:\n";
+foreach ($produto as $chave => $valor) {
+    echo "- $chave: $valor\n";
+}
+
+echo "\n";
+
+
 $produto["preco"] = 140.00;
-echo "<h3>5. Informações atualizadas do produto:</h3>";
-echo "<table border='1' style='border-collapse: collapse;'>";
-echo "<tr><th>Chave</th><th>Valor</th></tr>";
-foreach ($produto as $chave => $valor) {
-    echo "<tr><td>$chave</td><td>$valor</td></tr>";
-}
-echo "</table><br>";
 
-// 6. 
+echo "Informações atualizadas do produto:\n";
+foreach ($produto as $chave => $valor) {
+    echo "- $chave: $valor\n";
+}
+
+echo "\n";
+
+
 $unidades = 5;
 $valor_total = $produto["preco"] * $unidades;
-echo "<h3>6. Valor total pela venda de $unidades unidades:</h3>";
-echo "<table border='1' style='border-collapse: collapse;'>";
-echo "<tr><th>Unidades</th><th>Valor Total</th></tr>";
-echo "<tr><td>$unidades</td><td>R$ $valor_total</td></tr>";
-echo "</table><br>";
+echo "Valor total pela venda de $unidades unidades: R$ $valor_total\n";
 
-// 7. 
+echo "\n";
+
+
 $nomes_produtos = ["Teclado", "Mouse", "Monitor"];
 $precos_produtos = [150.00, 80.00, 1200.00];
 $produtos_associativos = array_combine($nomes_produtos, $precos_produtos);
-echo "<h3>7. Produtos e seus preços:</h3>";
-echo "<table border='1' style='border-collapse: collapse;'>";
-echo "<tr><th>Produto</th><th>Preço</th></tr>";
-foreach ($produtos_associativos as $nome => $preco) {
-    echo "<tr><td>$nome</td><td>R$ $preco</td></tr>";
-}
-echo "</table><br>";
 
-// 8. 
+echo "Produtos combinados com preços:\n";
+print_r($produtos_associativos);
+
+echo "\n";
+
+
 $cores = ["vermelho", "azul", "verde", "amarelo", "preto"];
-echo "<h3>8. Verificação da cor 'verde':</h3>";
-echo in_array("verde", $cores) ? "<p>A cor 'verde' está presente no array.</p>" : "<p>A cor 'verde' não está presente no array.</p>";
-echo "<br>";
+if (in_array("verde", $cores)) {
+    echo "A cor 'verde' está presente no array.\n";
+} else {
+    echo "A cor 'verde' não está presente no array.\n";
+}
 
-// 9. 
+echo "\n";
+
+
 $numeros = [10, 20, 30, 40, 50];
+
 $soma = array_sum($numeros);
 $media = $soma / count($numeros);
-echo "<h3>9. Soma e média dos números:</h3>";
-echo "<table border='1' style='border-collapse: collapse;'>";
-echo "<tr><th>Soma</th><th>Média</th></tr>";
-echo "<tr><td>$soma</td><td>$media</td></tr>";
-echo "</table><br>";
+echo "Soma dos números: $soma\n";
+echo "Média dos números: $media\n";
 ?>
