@@ -20,4 +20,5 @@
     typeof(typeof(numero1))
     console.log(typeof(numero1))
     alert(numero1 + numero2)
+    
 
