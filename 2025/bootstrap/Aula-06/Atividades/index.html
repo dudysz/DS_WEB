@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vinil Roots Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Vinil Roots</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section id="home" class="text-center text-light" style="padding-top:100px; background-color:#A35F2B;">
+  <div class="container py-5">
+    <h1 class="display-4 mb-3">Seja Bem-vindo ao Vinil Roots!</h1>
+    <p class="lead mb-4">Sua loja de discos favorita com os melhores lançamentos e clássicos do vinil.</p>
+    <a href="#sobre" class="btn btn-warning btn-lg w-50">Saiba Mais</a>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <div id="carouselVinil" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:500px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="discoarianagrande.jpg" class="d-block w-100 rounded" alt="Disco 1">
+        </div>
+        <div class="carousel-item">
+          <img src="discobillie.png" class="d-block w-100 rounded" alt="Disco 2">
+        </div>
+        <div class="carousel-item">
+          <img src="discojustin.png" class="d-block w-100 rounded" alt="Disco 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselVinil" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselVinil" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section id="sobre" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Nossos Produtos</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-light">
+          <img src="discoolivia.png" class="card-img-top rounded" alt="Disco A">
+          <div class="card-body">
+            <h5 class="card-title">Disco da Olivia Rodrigo</h5>
+            <p class="card-text">Um álbum cheio de emoções, com letras sinceras e hits que ficam na cabeça. Pop autêntico que fala de amor, perda e crescimento pessoal.</p>
+            <a href="#" class="btn btn-warning w-100">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-light">
+          <img src="discotaylor.png" class="card-img-top rounded" alt="Disco B">
+          <div class="card-body">
+            <h5 class="card-title">Disco Taylor Swift</h5>
+            <p class="card-text">Um álbum cheio de histórias e sentimentos, com melodias cativantes e letras que conectam corações. Pop e country se encontram na voz única de Taylor.</p>
+            <a href="#" class="btn btn-warning w-100">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-light">
+          <img src="discotheweeknd.png" class="card-img-top rounded" alt="Disco C">
+          <div class="card-body">
+            <h5 class="card-title">Disco The Weeknd</h5>
+            <p class="card-text">Um mergulho em batidas envolventes, vocais intensos e letras que exploram amor, desejo e introspecção. R&B e pop com estilo inconfundível.</p>
+            <a href="#" class="btn btn-warning w-100">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            Qual o prazo de entrega?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">O prazo médio é de 5 a 10 dias úteis, dependendo da região.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            Aceitam pagamentos com cartão?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Sim! Aceitamos todos os cartões de crédito e débito.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            Posso trocar meu disco?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Sim, você pode trocar em até 7 dias após a compra, com nota fiscal.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 text-center">
+  <div class="container">
+    <button type="button" class="btn btn-warning btn-lg w-50" data-bs-toggle="modal" data-bs-target="#contatoModal">
+      Entre em contato
+    </button>
+  </div>
+
+  <div class="modal fade" id="contatoModal" tabindex="-1" aria-labelledby="contatoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-secondary text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contatoModalLabel">Formulário de Contato</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nomeContato" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nomeContato">
+            </div>
+            <div class="mb-3">
+              <label for="emailContato" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="emailContato">
+            </div>
+            <div class="mb-3">
+              <label for="mensagemContato" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagemContato" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-4 bg-dark text-light text-center">
+  © 2025 - Criado por Duda - Todos os direitos reservados.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
